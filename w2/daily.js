@@ -11,15 +11,16 @@ const showOnPage = function (text) {
 
   // global variables
 
-  let currentTime = 3
-  let dinnerTime = 7
-  let maxMakeDinner = 5
+  let currentTime = 1200
+  let dinnerTime = 1900
+  let maxMakeDinner = 1700
   let availableTime = dinnerTime - currentTime
-  let minAvailTime = 2
+  let minAvailTime = 200
   
   // set variables
 
   let beHome = true
+  let notHome = false
   let cookDinner = true
   let getDinner = false
   
@@ -30,7 +31,7 @@ const showOnPage = function (text) {
   // determine whether to cook or get dinner based on time available
 
   if (cookDinner) {
-    availableTime > minAvailTime
+    availableTime >= minAvailTime
   } else {
     (getDinner)
   }
